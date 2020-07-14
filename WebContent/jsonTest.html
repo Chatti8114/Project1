@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item a img {
+            width: 100%;
+            /*width: 250px;*/
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+<div id="test">실행됩니다</div>
+<button>버튼</button>
+
+<div class="container">
+    <div id="carousel_1" class="carousel slide container-fluid " data-ride="carousel" data-interval="3500"
+         data-pause="none"
+         data-keyboard="false"
+         data-wrap="true">
+        <!-- 지표 -->
+        <ul class="carousel-indicators">
+<!--            <%&#45;&#45;        <li data-target="#carousel_1" data-slide-to="0" class="active"></li>&#45;&#45;%>-->
+<!--            <%&#45;&#45;        <li data-target="#carousel_1" data-slide-to="1"></li>&#45;&#45;%>-->
+<!--            <%&#45;&#45;        <li data-target="#carousel_1" data-slide-to="2"></li>&#45;&#45;%>-->
+        </ul>
+        <!-- 슬라이드 쇼 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="images/1.jpg" alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="images/2.jpg" alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="images/3.jpg" alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 " style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                          src="images/4.jpg" alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 " style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                          src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+                                                                                          alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/ny.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/ny.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3 pr-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                              src="https://www.w3schools.com/bootstrap4/ny.jpg"
+                                                                                              alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                    <div class="col-md-3" style="display: inline-block"><a href="#"><img class="img-thumbnail"
+                                                                                         src="https://www.w3schools.com/bootstrap4/ny.jpg"
+                                                                                         alt=""></a>
+                        <div class="text-center">TEST <span class="badge badge-primary">NEW</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 왼쪽 & 오른쪽 컨트롤 -->
+        <a class="carousel-control-prev" href="#carousel_1" data-slide="prev" style="width: 70px">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel_1" data-slide="next" style="width: 70px">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $("button").click(function () {
+            $.getJSON({ /* = getJSON() */ /* ajax로 보내면 json파일형식을 인식못함*/
+                type: "post",
+                // data: "", /* Json 데이터*/
+                url: "AjaxJson", /* 해당 url로 ajax 요청을 한다 */
+                // dataType: "json", /* 응답 텍스트는 처리과정 없이 콜백함수로 전달된다. */
+                // contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                success: function (data) { /* 응답이 성공 상태 코드를 반환하면 호출 */
+                    console.log(data); /* json 배열 출력 */
+                    for (var i = 0; i < data.length; i++) {
+
+                        // alert($("a").eq(i).html());
+
+                        // alert($(".badge").html());
+                        $("a").eq(i).attr("href", "BoardDetailAction.bo?num="+data[i].num).children().attr("src", data[i].image);
+                        $("a").eq(i).next().html(data[i].title +' <span class="badge badge-primary">NEW</span>');
+                    }
+                },
+                error: function (xhr,err) {
+                    alert('Ajax readyState: '+xhr.readyState+'\nstatus: '+xhr.status + ' ' + err);
+                }
+            });
+
+            // $.getJSON('AjaxJson',function(data){
+            //     $(data).each(function(index, item){
+            //         $('div').append('id:'+item.id+', ');
+            //         $('div').append('name:'+item.name);
+            //         $('div').append('<br>');
+            //     });
+            // });
+
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        div .border {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="border border-danger"></div>
+    <div class="border border-primary"></div>
+    <div class="border border-warning"></div>
+    <div class="border border"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () { /* 스크롤이 동작시 실행한다 */
+            var $window = $(this); /* 윈도우를 변수로 $window로 변수로 담는다 */
+            var scrollTop = $window.scrollTop(); /* 스크롤바 맨 위쪽의 값*/
+            var windowHeight = $window.height();  /* 보여지는 화면의 높이 */
+            var documentHeight = $(document).height(); /* 문서의 전체 높이 */
+            console.log("스크롤: " + scrollTop + " 창: " + windowHeight + " 전체: " + documentHeight);
+
+            // scrollbar의 thumb가 바닥 전 30px까지 도달 하면 리스트를 가져온다.
+            if( scrollTop + windowHeight + 30 > documentHeight ){
+                repleList();
+            }
+        });
+
+    });
+
+    function repleList() {
+        alert("작동한다 함수");
+
+
+        $.getJSON({
+            type: "get",
+            // data: "",
+            url: "etc.main",
+            success: function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    var cloth = $("#tab5").find("a").eq(i);
+                    cloth.attr("href", "BoardDetailAction.bo?num="+data[i].num).children().attr("src", data[i].image);
+                }
+            },
+            error: function (xhr,err) {
+                alert('Ajax 오류발생: '+xhr.readyState+'\nstatus: '+xhr.status + ' ' + err);
+            }
+        });
+    }
+
+
+
+
+    $(function() {
+
+        // 스크롤 감지
+        var didScroll = false;
+
+        $(window).on('scroll', function() { didScroll = true; });
+
+        setInterval(function() {
+            var bottomHeight = $(window).scrollTop() + $(window).height() + 600;
+            var docHeight = $(document).height();
+
+            if (didScroll) {
+                didScroll = false;
+                if (bottomHeight > docHeight) infiniteScrollContent();
+            }
+        }, 250);
+
+        function infiniteScrollContent() {
+
+            var scrollcon = '';
+            for (var k = 0; k < 4; k++) {
+                scrollcon += '<div class="product-item"><strong>상품이름</strong></div>';
+            }
+            $("#productScroll").append(scrollcon);
+        }
+    });
+
+</script>
+</body>
+</html>

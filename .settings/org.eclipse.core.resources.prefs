@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/net/board/action/BoardAddAction.java=UTF-8
+encoding//src/net/board/action/BoardFrontController.java=UTF-8
+encoding//src/net/board/action/BoardModifyAction.java=UTF-8
+encoding//src/net/board/action/BoardNotifyAciton.java=UTF-8
+encoding//src/net/board/action/GetReplyAction.java=UTF-8
+encoding//src/net/board/db/BoardDAO.java=UTF-8
+encoding//src/net/main/action/AjaxJson.java=UTF-8
+encoding//src/net/member/action/MemberDeleteAction.java=UTF-8
+encoding//src/net/member/action/MemberLoginAction.java=UTF-8
+encoding//src/net/member/db/MemberDAO.java=UTF-8
