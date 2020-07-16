@@ -1,5 +1,12 @@
 
 -- auto-generated definition
+create user summer identified by 1234;
+grant create user, create table, create sequence, create view, create session to summer;
+alter user summer default tablespace users;
+alter user summer quota unlimited on users;
+
+
+
 create table MEMBERSHIP
 (
     MEMBER_ID           VARCHAR2(15) not null
