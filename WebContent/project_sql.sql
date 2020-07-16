@@ -24,9 +24,7 @@ create table MEMBERSHIP
     MEMBER_NOTIFY_COUNT VARCHAR2(10)
 );
 alter table membership add(MEMBER_NOTIFY_COUNT VARCHAR2(10));
-drop table boardtable purge;
-drop table commentboard;
-drop table notify_board;
+
 -- auto-generated definition
 create table BOARDTABLE
 (
