@@ -4,7 +4,7 @@ create table MEMBERSHIP
 (
     MEMBER_ID           VARCHAR2(15) not null
         primary key,
-    MEMBER_PW           VARCHAR2(15),
+    MEMBER_PW           VARCHAR2(24),
     MEMBER_NAME         VARCHAR2(10),
     MEMBER_AGE          VARCHAR2(3),
     MEMBER_GENDER       VARCHAR2(3),
